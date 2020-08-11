@@ -26,6 +26,7 @@
             请输入书籍名称:<input type="text" v-model="name"><br>
             请输入书籍单价:<input type="text" v-model="prise"><br>
             请输入书籍总数:<input type="text" v-model="num"><br>
+            请输入书籍描述:<input type="text" v-model="discuss"><br>
             <button @click.prevent="addBook">点击添加书籍</button>
         </form>
     </div>
@@ -46,7 +47,8 @@
                 id:'',
                 name:"",
                 prise:"",
-                num:""
+                num:"",
+                discuss:''
             }
         },
         methods:{
@@ -72,12 +74,16 @@
                     obj.name = this.name
                     obj.prise = parseInt(this.prise)
                     obj.allNum = parseInt(this.num)
+                    let a = this.discuss.split(' ')
+                    console.log(a)
+                    obj.arr1 = a
                     console.log(obj)
                     this.message.unshift(obj)
                     this.id = ""
                     this.name = ""
                     this.prise = ""
                     this.num = ""
+                    this.discuss = ''
                 }
             }
         },
@@ -104,7 +110,7 @@
 <style lang="scss">
     .spanBox{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         .span{
             border: 1px solid black
         }

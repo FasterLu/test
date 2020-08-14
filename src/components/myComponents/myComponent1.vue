@@ -2,6 +2,8 @@
     <div>
         <p>这是一个子组件的一段话</p>
         <p>{{text}}</p>
+        <!-- <p>{{obj.a}} - {{obj.b}}</p>
+        <p>{{arr.join(',')}}</p> -->
         <div>{{msg}} <button @click="btn">点击改变</button></div>
         <br>
         <br>
@@ -13,7 +15,23 @@
 <script>
 export default {
     name:'myComponent1',
-    props:['text','word'],
+    // props:['text','word','obj','arr'],
+    props:{
+        text:{
+            type:String,
+            // required:true,        这是设置是否必传
+            default:'这是一个默认的字符串' //没传时的默认值
+        },
+        word:{
+            type:String
+        },
+        obj:{
+            type:Object
+        },
+        arr:{
+            type:Array
+        }
+    },
     data(){
         return{
             msg:this.text,

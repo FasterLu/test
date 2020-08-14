@@ -14,6 +14,9 @@
       <router-link to="/test9">Test9</router-link> |
       <router-link to="/test10">Test10</router-link> |
       <router-link to="/test11">Test11</router-link> |
+      <router-link to="/test12">Test12</router-link> |
+      <router-link to="/test13">Test13</router-link> |
+      <router-link to="/test14">Test14</router-link>
     </div>
     <router-view/>
   </div>

@@ -21,8 +21,13 @@ const Test13 = () =>
   import ('../views/Test13.vue')
 const Test14 = () =>
   import ('../views/Test14.vue')
+const Test15 = () =>
+  import ('../views/Test15.vue')
+const Test16 = () =>
+  import ('../views/Test16.vue')
 const NotFound = () =>
   import ('../views/NotFound.vue')
+
 
 //注册路由插件
 Vue.use(VueRouter)
@@ -114,6 +119,16 @@ Vue.use(VueRouter)
     },
     name: 'Test14',
     component: Test14
+  },
+  {
+    path: '/test15',
+    name: 'Test15',
+    component: Test15
+  },
+  {
+    path: '/test16',
+    name: 'Test16',
+    component: Test16
   },
   {
     path:'*',

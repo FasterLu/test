@@ -10,7 +10,7 @@
         </ul>
 
         <hr>
-        <div>{{user.name}} | <input type="text" v-model="user.age"> | 
+        <div>{{user.name}}--{{user.age}} | <input type="text" v-model="user.age"> | 
             <button @click="addBtn">点击添加属性</button>
         </div>
     </div>

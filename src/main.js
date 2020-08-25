@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import store from './store/index'
 import globalComponent from '@/components/component-G' //这是引入的一个全局组件
 import axios from 'axios'
 import VueAxios from 'vue-axios'
